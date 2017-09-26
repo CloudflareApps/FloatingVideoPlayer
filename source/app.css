@@ -1,0 +1,30 @@
+cloudflare-app[app="floating-video-player"] {
+  display: flex;
+  outline: 1px dotted;
+}
+
+cloudflare-app[app="floating-video-player"][data-horizontal-alignment="left"] {
+  justify-content: flex-start;
+}
+
+cloudflare-app[app="floating-video-player"][data-horizontal-alignment="center"] {
+  justify-content: center;
+}
+
+cloudflare-app[app="floating-video-player"][data-horizontal-alignment="right"] {
+  justify-content: flex-end;
+}
+
+cloudflare-app[app="floating-video-player"] player-container {
+  display: block;
+  height: 360px;
+  width: 640px;
+  max-width: 100%;
+}
+
+cloudflare-app[app="floating-video-player"] player-container .cf-player-element {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
