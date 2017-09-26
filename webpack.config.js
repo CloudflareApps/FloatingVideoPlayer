@@ -11,7 +11,7 @@ const modulePattern = /(node_modules|bower_components)/
 
 $.entry = {
   app: path.resolve(__dirname, './source', 'app.js'),
-  style: path.resolve(__dirname, './source', 'app.css')
+  style: path.resolve(__dirname, './source', 'app.sss')
 }
 
 $.output = {
@@ -30,8 +30,8 @@ $.module = {
   rules: [
     // Use the latest CSS with PostCSS.
     {
-      test: /\.css$/,
-      loaders: 'file-loader?name=[name].[ext]!extract-loader!css-loader!postcss-loader'
+      test: /\.sss$/,
+      loaders: 'file-loader?name=[name].css!extract-loader!css-loader!postcss-loader'
     },
     // Use the latest JavaScript with Babel.
     { test: /\.js$/, exclude: modulePattern, loader: 'babel-loader' },

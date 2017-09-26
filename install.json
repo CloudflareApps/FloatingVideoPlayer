@@ -1,5 +1,15 @@
 {
   "resources": {
+    "head": [
+      {
+        "type": "script",
+        "src": "./vendor/media.js"
+      },
+      {
+        "type": "script",
+        "src": "./vendor/intersection-observer.js"
+      }
+    ],
     "body": [
       {
         "type": "style",
@@ -31,7 +41,8 @@
         "type": "object",
         "properties": {
           "location": {
-            "title": "Where is your video?",
+            "title": "Source",
+            "description": "Where is your video located?",
             "order": 0,
             "type": "string",
             "format": "radios",
